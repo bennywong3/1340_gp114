@@ -31,6 +31,10 @@ Contributors:
 
 # Problem settings
 
+Dining area layout (default setting):
+
+<img src="image/layout.jpg">
+
 Maximum table size: 8
 
 Size of tables available: 2,4,8
@@ -47,4 +51,3 @@ Preferable dining time for each customer: 1 hour, maximum 2 hours
 
 Size of dining area: 2000 sq. ft. with maximum 3 rows X 5 columns (in rectangular shape)
 
-Dining area layout (default setting):
