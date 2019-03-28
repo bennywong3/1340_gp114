@@ -1,8 +1,13 @@
 # 1340 group 114 (Table management system)
-Student Wong Ka Ngai with UID 3035568881 and Student Wan Tsun Wai with UID 3035569017
-## Problem statement	
 
-### Our family-owned deli lacks a table management system. We face a number of difficulties because of this.
+Contributors:
+
+- Wong Ka Ngai (UID 3035568881)
+- Wan Tsun Wai (UID 3035569017)
+
+# Problem statement	
+
+ Our family-owned deli lacks a table management system. We face a number of difficulties because of this.
 
 **1. Availability of tables**
 
@@ -24,7 +29,7 @@ Student Wong Ka Ngai with UID 3035568881 and Student Wan Tsun Wai with UID 30355
 
 > During peak hours, we have to rearrange customers’ seat in order to maximize table usage. For example, when a group of 3 is waiting, we have to arrange them to share an 8-seat table with another 5 customers.  
 
-## Problem settings
+# Problem settings
 
 Maximum table size: 8
 
