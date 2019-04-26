@@ -33,7 +33,7 @@ Contributors:
 
 Dining area layout (default setting):
 
-<img src="image/layout_correct.jpg">
+<img src="image/layout.jpg">
 
 Maximum table size: 8
 
