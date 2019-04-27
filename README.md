@@ -92,6 +92,7 @@ Number of customers left: 3
 
    - if a group of 8 customers came in and separated into 4, 2, 2, the program considered it as 3 groups of customers. 
 
+6. When customers occupied tables for 2 hours, it is considered as too long. 2 hours is scaled down to 20 seconds in real life for simplicity. 
 
 # Functionalities and features	
 
@@ -158,6 +159,19 @@ Refer to assumptions 3, 4, 5 for manual release.
 
 **5. Check tables occupied for too long**
 
+To tackle problem 3 (no trackable record of customer’s dining time), the subprogram "Check tables occupied for too long" allows users to check whether there are tables occupied for too long whenever they want.
+
+When this subprogram is called, it will check if there is any group of customers that occupied a table for more than 20 seconds in real life. If so, it will print out all the groups and ask whether the user want them to leave. If there is no group occupying too long, "There is no costumer occupied a table for too long." will be printed.
+
+Example output when 3 groups of customers occupied tables for too long.
+
+```
+2 customers occupied table R2C0 for too long.
+4 customers occupied table R1C0 for too long.
+8 customers occupied table R0C0 for too long.
+Would you like those customers to leave?
+Your choice(Y/N):
+```
 
 **6. Release a table automatically**
 
