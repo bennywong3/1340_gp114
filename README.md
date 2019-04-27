@@ -135,8 +135,8 @@ I. Use these command lines to compile all files separately:
  
 II. If the compilation is successful, you should find another file “main” in the working directory.
 
-<img src="image/compile.png">
+<img src="image/compilation.png">
 
 III.Run the executable “main” by typing “./main” at the prompt
 
-<img src="image/execute.png">
+<img src="image/execution.png">
