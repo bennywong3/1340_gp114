@@ -19,7 +19,7 @@ Contributors:
 
 **3. No trackable record of customer’s dining time**
 
-> We do not know how long a customer has occupied a table. Therefore, we cannot identify those who occupied for a long time and politely ask them to leave. As a result, the table turnover rate is low.  
+> We do not know how long a group of customers has occupied a table. Therefore, we cannot identify those groups which occupied for a long time and politely ask them to leave. As a result, the table turnover rate is low.  
 
 **4. Layout of deli**
 
@@ -27,7 +27,7 @@ Contributors:
 
 **5. Limited table size**
 
-> During peak hours, we have to rearrange customers’ seat in order to maximize table usage. For example, when a group of 3 is waiting, we have to arrange them to share an 8-seat table with another 5 customers.  
+> During peak hours, we have to share a table for multiple groups of customers in order to maximize table usage. For example, when a group of 3 is waiting, we have to arrange them to share an 8-seat table with another 5 customers.  
 
 **6. No trackable record**
 
@@ -43,19 +43,19 @@ Maximum table size: 8
 
 Size of tables available: 2, 4, 8
 
-Total number of seats available: 70
+Maximum total number of seats available: 70
 
-Number of table for 2:  5
+Maximum number of table for 2:  5
 
-Number of table for 4: 5
+Maximum number of table for 4: 5
 
-Number of table for 8: 5
+Maximum number of table for 8: 5
 
 Number of customers for each entry: 1-8 (our deli cannot handle a group of customers with more than 8 people)
 
 Preferable dining time for each customer: 1 hour, maximum 2 hours
 
-Size of dining area: 2000 sq. ft. with maximum 3 rows X 5 columns (in rectangular shape)
+Size of dining area: 2000 sq. ft. with 3 rows X 5 columns (in rectangular shape)
 
 Each table is named according to its coordinate, i.e. the table at upper left corner is named R0C0.
 
@@ -67,7 +67,7 @@ Each table is named according to its coordinate, i.e. the table at upper left co
 
 3. It is assumed that customers from the same group leave at the same time.
 
-   - if a group of 6 customers entered the deli and occupied a 8-seat table R0C0, all of them leave the table at the same time.
+   - If a group of 6 customers entered the deli and occupied an 8-seat table R0C0, all of them leave the table at the same time.
    - **Number of customers left must equal to the size of group.** (in this case, 6)
 
 ```
@@ -77,9 +77,9 @@ Column number: 0
 Number of customers left: 6
 ```
 
-4. It is assumed that customers from different groups sharing the same table, the two groups leave separately.
+4. It is assumed that when customers from different groups share the same table, the two groups leave separately.
 
-   - if a group of 5 customers and another group of 3 customers occupied a 8-seat table R0C0, when users want to manually release table R0C0, users have to use the "Release a table" function twice.
+   - If a group of 5 customers and another group of 3 customers occupied an 8-seat table R0C0, when users want to manually release table R0C0, users have to use the "Release a table" function twice.
 ```
 Please input the row and column of the table and the number of customers left
 Row number: 0
@@ -92,9 +92,11 @@ Row number: 0
 Column number: 0
 Number of customers left: 3
 ```
-5. When there is not enough seats and customers separate into multiple groups to share tables with others,  they no longer considered as a group and they can leave seperately. Refer to assumption 4 for manual release.
+5. When there is not enough seats and customers separate into multiple groups to share tables with others,  they no longer considered as a group and they can leave seperately.
 
-   - if a group of 8 customers came in and separated into 4, 2, 2, the program considered it as 3 groups of customers. 
+   - If a group of 8 customers came in and separated into 4, 2, 2, the program considered it as 3 groups of customers. 
+
+      Refer to assumption 4 for manual release.
 
 6. When customers occupied tables for 2 hours, it is considered as too long. 2 hours is scaled down to 20 seconds in real life for simplicity. 
 
