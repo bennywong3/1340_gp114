@@ -90,7 +90,7 @@ The above layout indicates that there is only 6 customers inside the deli, and t
 
 **3. Occupy a table**
 
-To tackle problem 2 (management of seats), when we input the number of customers, this program will automactically suggest a vacant table with minimal enough seats for this group of customers. When the number of customers is 5 to 8, this program will assign the 5 customers to occupy a vacant 8-seat table. If the number is 3 to 4, a vacant 4-seat table will be assigned. If the number is 1 to 2, 2-seat table will be used.
+To tackle problem 2 (management of seats) that occuppying a table is insufficient, when we input the number of customers, this program will automactically suggest a vacant table with minimal enough seats for this group of customers. When the number of customers is 5 to 8, this program will assign the 5 customers to occupy a vacant 8-seat table. If the number is 3 to 4, a vacant 4-seat table will be assigned. If the number is 1 to 2, 2-seat table will be used.
 
 For example, if the input is 5, this program will assign the 5 customers to occupy a vacant 8-seat table. 
 
@@ -101,9 +101,11 @@ If inputs are 3 groups with number of customers 5, 4, 2 respectively, the output
 2-0 2-2 2-2 2-2 2-2
 ```
 
-**3. Release a table**
+**4. Release a table**
 
-**4. Check tables occupied for too long**
+To tackle problem 2 (management of seats) that we fail to know which table is released, 
+
+**5. Check tables occupied for too long**
 
 # Input/ouput specifications
 
