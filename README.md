@@ -88,7 +88,7 @@ Row number: 0
 Column number: 0
 Number of customers left: 3
 ```
-5. When there is not enough seats and customers separate into multiple groups to share tables with others,  they no longer consider as a group and they can leave seperately.
+5. When there is not enough seats and customers separate into multiple groups to share tables with others,  they no longer considered as a group and they can leave seperately. Refer to assumption 4 for manual release.
 
    - if a group of 8 customers came in and separated into 4, 2, 2, the program considered it as 3 groups of customers. 
 
@@ -141,9 +141,20 @@ If inputs are 3 groups with number of customers 5, 4, 2 respectively, the output
 2-0 2-2 2-2 2-2 2-2
 ```
 
-**4. Release a table**
+**4. Release a table manually**
 
-To tackle problem 2 (management of seats) that we fail to know which table is released, this program allows us to manually release table. 
+To tackle problem 2 (management of seats) that we fail to know which table is released, this program allows us to manually release tables. Users have to enter and row and column number of table, and the number of customers that left.
+
+For example, if a group of 3 customers leaves 4-seat table R1C0, the input should be:
+
+```
+Please input the row and column of the table and the number of customers left
+Row number: 1
+Column number: 0
+Number of customers left: 3
+```
+
+Refer to assumptions 3, 4, 5 for manual release.
 
 **5. Check tables occupied for too long**
 
