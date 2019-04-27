@@ -121,7 +121,7 @@ Your input:
 
 ### **2. Check current availability of seats**
 
-To tackle problem 1 (availability of tables), when this program prints the layout of the deli, it also prints the currently available seats of all tables next to the table size. The output of one table will be <table size - curr. ava.seat>.
+To tackle problem 1 (availability of tables), when this program prints the layout of the deli, it also prints the currently available seats of all tables next to the table size. The output of one table will be <table size - curr. ava. seat>.
 
 For example, when there are 6 customers occupying an 8-seat table, that means 2 seats are available for this table. 
 So, the output of that table will be 8-2.
@@ -137,7 +137,7 @@ The above layout indicates that there are only 6 customers inside the deli, and 
 
 ### **3. Occupy a vacant table**
 
-To tackle problem 2 (management of seats) that occupying a table is insufficient, when we input the number of customers, this program will automatically suggest a vacant table with minimal enough seats for this group of customers. When the number of customers is 5 to 8, this program will assign the 5 customers to occupy a vacant 8-seat table. If the number is 3 to 4, a vacant 4-seat table will be assigned. If the number is 1 to 2, a 2-seat table will be used.
+To tackle problem 2 (management of seats) that occupying a table is insufficient, when we input the number of customers, this program will automatically suggest a vacant table with minimal enough seats for this group of customers. When the number of customers is 5 to 8, it will assign those customers to occupy a vacant 8-seat table. If the number is 3 to 4, a vacant 4-seat table will be assigned. If the number is 1 to 2, a 2-seat table will be used.
 
 For example, if the input is 5, this program will assign the 5 customers to occupy a vacant 8-seat table. 
 
@@ -150,7 +150,7 @@ If inputs are 3 groups with number of customers 5, 4, 2 respectively, the output
 
 ### **4. Release a table manually**
 
-To tackle problem 2 (management of seats) that we fail to know which table is released, this program allows us to manually release tables. Users have to enter and row and column number of table, and the number of customers that left.
+To tackle problem 2 (management of seats) that we fail to know which table is released, this program allows us to manually release tables. Users have to enter the row and column number of table, and the number of customers that left.
 
 For example, if a group of 3 customers leaves 4-seat table R1C0, the input should be:
 
@@ -195,7 +195,7 @@ Current layout:
 ```
 ### **7. Change the layout of deli**
 
-To tackle problem 4 (layout of deli), we have 5 preset layout options and 1 custom setting option for the user, including default setting, spring setting, summer setting, autumn setting, and winter setting.
+To tackle problem 4 (the layout of deli), we have 5 preset layout options and 1 custom setting option for the user, including default setting, spring setting, summer setting, autumn setting, and winter setting.
 
 - Default setting (1)
 ```
@@ -229,9 +229,9 @@ X-X X-X X-X X-X X-X
 ```
 - Custom setting (6)
 
-For custom setting, input your desired layout (with 3 rows x 5 columns, input 0 if there is no table and space between integers is required.)
+    For custom setting, input your desired layout (with 3 rows x 5 columns, input 0 if there is no table and space between integers is required.)
 
-The occurrence of integers 8, 4 and 2 should not exceed 5 respectively. 
+    The occurrence of integers 8, 4 and 2 should not exceed 5 respectively. 
 
 For example, input:
 ```
@@ -239,7 +239,9 @@ For example, input:
 0 4 0 4 0
 2 0 2 0 2
 ```
+
 The custom setting will be:
+
 ```
 8-8 X-X 8-8 X-X 8-8 
 X-X 4-4 X-X 4-4 X-X 
@@ -251,20 +253,19 @@ X-X 4-4 X-X 4-4 X-X
 
 To tackle problem 5 (limited table size), we implement an additional function which will arrange and split customers in order to have maximum table usage.
     
-For example, in the default setting, if 4 groups of 6 people are in the deli, i.e.
+For example, in the default setting, if 4 groups of 6 customers are in the deli, i.e.
 ```
 8-2 8-2 8-2 8-2 8-2 
 4-4 4-4 4-4 4-4 4-4 
 2-2 2-2 2-2 2-2 2-2
 ```
-another group of 6 people will not be able to occupy an 8-man table. Our system will then split them into multiple groups which most of them can sit together. 
-Just like below:
+Another group of 6 customers will not be able to occupy an 8-seat table. Our system will then split them into multiple groups which most of them can sit together, just like below:
 ```
 8-2 8-2 8-2 8-2 8-2 
 4-0 4-2 4-4 4-4 4-4 
 2-2 2-2 2-2 2-2 2-2 
 ``` 
-if we input one more group of 6 people in, the result will be like this:
+If we input one more group of 6 customers in, the result will be like this:
 ```
 8-2 8-0 8-2 8-2 8-2 
 4-0 4-2 4-0 4-2 4-4
@@ -281,7 +282,7 @@ The function will first open the file "input.txt" with yesterday’s record to g
 
 Next, it will create a file "output.txt" and add up today’s number of customers to the accumulated number of customers.
 
-Then, it will export the total number of customers, the program ended time and a full record of today’s customers(number of customers and the respective table number).
+Then, it will export the total number of customers, the program ended time and a full record of today’s customers (the number of customers and the respective table number).
 
 Here is an example of the output file:
 
@@ -319,12 +320,13 @@ Please select (1 to 6):
 
 - Preset Layouts (1 to 5)
 
-  - If you want to choose layout 1, type **1**
+  - For example, if you want to choose the default setting, type **1**.
 
 - Custom Layout
 
-  - If you want to use custom setting, type **6** and then input your desired layout(with 3 rows x 5 columns, input 0 if there is no table and space between integers is required.
+  - If you want to use the custom setting, type **6** and then input your desired layout (with 3 rows x 5 columns, input 0 if there is no table and space between integers is required.)
   - The occurrence of integers 8, 4 and 2 should not exceed 5 respectively. Do not input integer except 0, 2, 4, 8.
+  
 An example input:
 ```
 8 0 8 0 8
@@ -359,15 +361,15 @@ Input the corresponding number
 Your input: 
 ```
 - **Occupy a table**
-   - if you want to occupy a table when customers come in, type **1**. The serial output will be as follows:
+   - If you want to occupy a table when customers come in, input **1**. The serial output will be as follows:
 ```
 Number of customers (1-8): 
 ```
- >type the numbers of customers (from 1-8, cannot exceed 8)
+ >Input the numbers of customers. (from 1 to 8, cannot exceed 8)
  
  
 - **Release a table**
-   - if you want to release a table manually, type **2**. The serial output will be as follows:
+   - iIf you want to release a table manually, input **2**. The serial output will be as follows:
 ```
 Please input the row and column of the table and the number of customers left
 Row number: 
@@ -378,9 +380,13 @@ Number of customers left:
  
  >Row number is in range 0 to 2, column number is in range 0 to 4 and the number of customers left is in range 0 to 8.
  
+ >Refer to assumptions 3, 4, 5 for manual release.
+ 
  
 - **Check tables occupied for too long**
-   - if you want to check whether there are customers occupied the seats for too long, type **3**; case 1 will happen if no customers occupied the seats for too long, otherwise case 2 will happen.
+   - If you want to check whether there are customers occupied the seats for too long, input **3**.
+   
+     Case 1 will happen if no customers occupied the seats for too long, otherwise case 2 will happen.
    
 *case 1:*
 ```
@@ -391,19 +397,35 @@ There is no costumer occupied a table for too long.
 Would you like those customers to leave?
 Your choice(Y/N): 
 ```
- >if you want to remove the customers that occupied the seats for too long and release the table automatically, type **Y**, otherwise **N**.
+ > If you want to remove the customers that occupied the seats for too long and release the table automatically, input **Y**, otherwise **N**.
  
 - **Show current availability of seats**
-   - if you want to see the current status of the deli, type **4**.
-   
+   - if you want to see the current status of the deli, input **4**.
+
+A sample output after inputting **4**:   
+```
+--------------------
+Current layout: 
+8-8 8-8 8-8 8-8 8-8 
+4-4 4-4 4-4 4-4 4-4 
+2-2 2-2 2-2 2-2 2-2 
+--------------------
+```
 
 - **End program**
-   - if you want to end the program, type **5**.
+   - if you want to end the program, input **5**.
+     It will output the total number of customers for today and then end the program. 
 
+A sample output after inputting **5**:   
+```   
+Today a total of 0 customers visited our deli.
+See output.txt for more details.
+End of program.
+```
 
 # Output specifications
     
-A text file named “*output.txt*” will be generated, here is an example:
+A text file named *“output.txt”* will be generated, here is an example:
 ```
 #output.txt
 Accumulated total number of customers:
@@ -416,7 +438,7 @@ Sat Apr 27 17:44:14 2019
 Full record of today's customers (in descending order)
 ```
 
-The number of accumulated customers, the total number of customers today, the program ended time and a full record of today’s customers will be showed(number of customers and the respective table number)
+The number of accumulated customers, the total number of customers for today, the program ended time and a full record of today’s customers will be showed (the number of customers and the respective table number)
 
 
 # Compilation and execution instructions
@@ -457,6 +479,6 @@ II. If the compilation is successful, you should find another file “main” in
 
 <img src="image/compilation.png">
 
-III.Run the executable “main” by typing “./main” at the prompt
+III. Run the executable “main” by typing “./main” at the prompt
 
 <img src="image/execution.png">
