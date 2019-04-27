@@ -5,7 +5,7 @@ Contributors:
 - Wong Ka Ngai (UID 3035568881)
 - Wan Tsun Wai (UID 3035569017)
 
-# Problem statement	
+# Problem statement    
 
  Our family-owned deli lacks a table management system. We face a number of difficulties because of this.
 
@@ -15,15 +15,15 @@ Contributors:
 
 **2. Management of seats**
 
-> Sometimes when a large group of customers come, we cannot arrange tables with suitable size for them in a short time. We have to walk around the deli to find a table for them, which is time-consuming. Also when customers leave, we cannot know which table becomes vacant immediately.
+> Sometimes when a large group of customers comes, we cannot arrange tables with suitable size for them in a short time. We have to walk around the deli to find a table for them, which is time-consuming. Also when customers leave, we cannot know which table becomes vacant immediately.
 
 **3. No trackable record of customer’s dining time**
 
 > We do not know how long a group of customers has occupied a table. Therefore, we cannot identify those groups which occupied for a long time and politely ask them to leave. As a result, the table turnover rate is low.  
 
-**4. Layout of deli**
+**4. The layout of deli**
 
-> As the deli’s layout changes seasonally, it is hard for us to memorize the new layout, which results in a longer time to lead customers to a suitable table.
+> As the deli’s layout changes seasonally, it is hard for us to memorize the new layout, which results in a long time to lead customers to a suitable table.
 
 **5. Limited table size**
 
@@ -31,7 +31,7 @@ Contributors:
 
 **6. No trackable record**
 
-> We have no records of deli’s operation. We do not know how many customers have come to our deli in one day and we cannot make comparison between previous records and new records. Also, we do not know our target customers, like whether large groups or couples prefer our deli more.
+> We have no records of deli’s operation. We do not know how many customers have come to our deli in one day and we cannot make comparisons between previous records and new records. Also, we do not know our target customers, like whether large groups or couples prefer our deli more.
 
 # Problem settings
 
@@ -53,22 +53,22 @@ Maximum number of table for 8: 5
 
 Number of customers for each entry: 1-8 (our deli cannot handle a group of customers with more than 8 people)
 
-Preferable dining time for each customer: 1 hour, maximum 2 hours
+Preferable dining time for each customer: 1 hour, maximum of 2 hours
 
-Size of dining area: 2000 sq. ft. with 3 rows X 5 columns (in rectangular shape)
+Size of the dining area: 2000 sq. ft. with 3 rows X 5 columns (in a rectangular shape)
 
-Each table is named according to its coordinate, i.e. the table at upper left corner is named R0C0.
+Each table is named according to its coordinate, i.e. the table at the upper left corner is named R0C0.
 
 ### **Assumption**
 
 1. Our deli cannot handle a group of customers with more than 8 people.
 
-2. Our deli only has 2-seat tables, 4-seat tables and 8-seat tables. The maximum number for each is 5.
+2. Our deli only has 2-seat tables, 4-seat tables, and 8-seat tables. The maximum number for each is 5.
 
 3. It is assumed that customers from the same group leave at the same time.
 
    - If a group of 6 customers entered the deli and occupied an 8-seat table R0C0, all of them leave the table at the same time.
-   - **Number of customers left must equal to the size of group.** (in this case, 6)
+   - **Number of customers left must equal to the size of the group.** (in this case, 6)
 
 ```
 Please input the row and column of the table and the number of customers left
@@ -92,19 +92,19 @@ Row number: 0
 Column number: 0
 Number of customers left: 3
 ```
-5. When there is not enough seats and customers separate into multiple groups to share tables with others,  they no longer considered as a group and they can leave seperately.
+5. When there is not enough seats and customers separate into multiple groups to share tables with others,  they no longer considered as a group and they can leave separately.
 
    - If a group of 8 customers came in and separated into 4, 2, 2, the program considered it as 3 groups of customers. 
 
       Refer to assumption 4 for manual release.
 
-6. When customers occupied tables for 2 hours, it is considered as too long. 2 hours is scaled down to 20 seconds in real life for simplicity. 
+6. When customers occupied tables for 2 hours, it is considered too long. 2 hours is scaled down to 20 seconds in real life for simplicity. 
 
-# Functionalities and features	
+# Functionalities and features    
 
 ### **1. Navigation menu**
 
-In order to access different functions of this program, it provides a navigation menu for users to choose the corresponding function. The program will constantly print this menu after a action has done.
+In order to access different functions of this program, it provides a navigation menu for users to choose the corresponding function. The program will constantly print this menu after an action has done.
 
 Below is how the menu looks like:
 ```
@@ -121,9 +121,9 @@ Your input:
 
 ### **2. Check current availability of seats**
 
-To tackle problem of 1 (availability of tables), when this program print the layout of the deli, it also prints the current available seats of all tables next to the table size. The output of one table will be <table size - curr. ava.seat>.
+To tackle problem 1 (availability of tables), when this program prints the layout of the deli, it also prints the currently available seats of all tables next to the table size. The output of one table will be <table size - curr. ava.seat>.
 
-For example, when there is 6 customers occupying a 8-seat table, that means 2 seats are available for this table. 
+For example, when there are 6 customers occupying an 8-seat table, that means 2 seats are available for this table. 
 So, the output of that table will be 8-2.
 
 The program will print the current layout as follows:
@@ -133,11 +133,11 @@ Current layout:
 4-4 4-4 4-4 4-4 4-4
 2-2 2-2 2-2 2-2 2-2
 ```
-The above layout indicates that there is only 6 customers inside the deli, and they are occupying the 8-seat table in the upper left corner.
+The above layout indicates that there are only 6 customers inside the deli, and they are occupying the 8-seat table in the upper left corner.
 
 ### **3. Occupy a vacant table**
 
-To tackle problem 2 (management of seats) that occuppying a table is insufficient, when we input the number of customers, this program will automactically suggest a vacant table with minimal enough seats for this group of customers. When the number of customers is 5 to 8, this program will assign the 5 customers to occupy a vacant 8-seat table. If the number is 3 to 4, a vacant 4-seat table will be assigned. If the number is 1 to 2, 2-seat table will be used.
+To tackle problem 2 (management of seats) that occupying a table is insufficient, when we input the number of customers, this program will automatically suggest a vacant table with minimal enough seats for this group of customers. When the number of customers is 5 to 8, this program will assign the 5 customers to occupy a vacant 8-seat table. If the number is 3 to 4, a vacant 4-seat table will be assigned. If the number is 1 to 2, a 2-seat table will be used.
 
 For example, if the input is 5, this program will assign the 5 customers to occupy a vacant 8-seat table. 
 
@@ -167,7 +167,7 @@ Refer to assumptions 3, 4, 5 for manual release.
 
 To tackle problem 3 (no trackable record of customer’s dining time), the subprogram "Check tables occupied for too long" allows users to check whether there are tables occupied for too long whenever they want.
 
-When this subprogram is called, it will check if there is any group of customers that occupied a table for more than 20 seconds in real life. If so, it will print out all the groups and ask whether the user want them to leave. If there is no group occupying too long, "There is no costumer occupied a table for too long." will be printed.
+When this subprogram is called, it will check if there is any group of customers that occupied a table for more than 20 seconds in real life. If so, it will print out all the groups and ask whether the user wants them to leave. If there is no group occupying too long, "There is no costumer occupied a table for too long." will be printed.
 
 Example output when 3 groups of customers occupied tables for too long. (default layout)
 
@@ -181,9 +181,9 @@ Your choice(Y/N):
 
 ### **6. Release a table automatically**
 
-If there are customers occupied for too long like the example above, and the user enter character **Y**, the program will automatically let those groups leave.
+If there are customers occupied for too long like the example above, and the user enters character **Y**, the program will automatically let those groups leave.
 
-The next output for previous example is as follows:
+The next output for the previous example is as follows:
 ```
 Your choice(Y/N): Y
 --------------------
@@ -195,7 +195,7 @@ Current layout:
 ```
 ### **7. Change the layout of deli**
 
-To tackle problem 4 (layout of deli), we have 5 preset layout options and 1 custom setting option for the user, including default setting, spring setting, summer setting, autumn setting and winter setting.
+To tackle problem 4 (layout of deli), we have 5 preset layout options and 1 custom setting option for the user, including default setting, spring setting, summer setting, autumn setting, and winter setting.
 
 - Default setting (1)
 ```
@@ -250,7 +250,7 @@ X-X 4-4 X-X 4-4 X-X
 ### **8. Table sharing**
 
 To tackle problem 5 (limited table size), we implement an additional function which will arrange and split customers in order to have maximum table usage.
-	
+    
 For example, in the default setting, if 4 groups of 6 people are in the deli, i.e.
 ```
 8-2 8-2 8-2 8-2 8-2 
@@ -273,13 +273,13 @@ if we input one more group of 6 people in, the result will be like this:
 So that the table usage is maximized.
 
 
-### **9. File input and ouput to save record**
+### **9. File input and output to save record**
 
 To focus on problem 9 (no trackable record), in order to keep records of deli’s operation, we implemented an additional function to store and export the record to a text file. 
 
 The function will first open the file "input.txt" with yesterday’s record to get the accumulated number of customers.
 
-Next, it will create a file "output.txt" and add up today’s number of customers to accumulated number of customers.
+Next, it will create a file "output.txt" and add up today’s number of customers to the accumulated number of customers.
 
 Then, it will export the total number of customers, the program ended time and a full record of today’s customers(number of customers and the respective table number).
 
@@ -311,7 +311,7 @@ Choose your layout:
 2: Spring setting  (deleted one row)
 3: Summer setting  (large tables are at the corner)
 4: Autumn setting  (deleted two columns for space)
-5: Winter setting  (less tables)
+5: Winter setting  (fewer tables)
 6: Custom setting  (input your own layout)
 -----------------------------------------------------
 Please select (1 to 6):
@@ -324,7 +324,7 @@ Please select (1 to 6):
 - Custom Layout
 
   - If you want to use custom setting, type **6** and then input your desired layout(with 3 rows x 5 columns, input 0 if there is no table and space between integers is required.
-  - The occurance of integers 8, 4 and 2 should not exceed 5 respectively. Do not input integer except 0, 2, 4, 8.
+  - The occurrence of integers 8, 4 and 2 should not exceed 5 respectively. Do not input integer except 0, 2, 4, 8.
 An example input:
 ```
 8 0 8 0 8
@@ -376,7 +376,7 @@ Number of customers left:
 ```
  >First input the row number, and then the column number, finally the number of customers that you wanted them to leave. 
  
- >Row number is in range 0 to 2, column number is in range 0 to 4 and number of customers left is in range 0 to 8.
+ >Row number is in range 0 to 2, column number is in range 0 to 4 and the number of customers left is in range 0 to 8.
  
  
 - **Check tables occupied for too long**
@@ -402,7 +402,7 @@ Your choice(Y/N):
 
 
 # Output specifications
-	
+    
 A text file named “*output.txt*” will be generated, here is an example:
 ```
 #output.txt
