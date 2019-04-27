@@ -345,13 +345,15 @@ Input the corresponding number
 ---------------------------------------
 Your input: 
 ```
-- Occupy a table
+- **Occupy a table**
    - if you want to occupy a table when customers come in, type **1**. The serial output will be as follows:
 ```
 Number of customers (1-8): 
 ```
  >type the numbers of customers(from 1-8, cannot exceed 8)
-- Release a table
+ 
+ 
+- **Release a table**
    - if you want to release a table manually, type **2**. The serial output will be as follows:
 ```
 Please input the row and column of the table and the number of customers left
@@ -359,10 +361,12 @@ Row number:
 Column number: 
 Number of customers left: 
 ```
- >first input the row number, and then the column number, finally the number of customers that you wanted them to leave. 
+ >First input the row number, and then the column number, finally the number of customers that you wanted them to leave. 
  
  >Row number is in range 0 to 2, column number is in range 0 to 4 and number of customers left is in range 0 to 8.
-- Check tables occupied for too long
+ 
+ 
+- **Check tables occupied for too long**
    - if you want to check whether there are customers occupied the seats for too long, type **3**; case 1 will happen if no customers occupied the seats for too long, otherwise case 2 will happen.
    
 *case 1:*
@@ -376,10 +380,13 @@ Your choice(Y/N):
 ```
  >if you want to remove the customers that occupied the seats for too long and release the table automatically, type **Y**, otherwise **N**.
  
-- Show current availability of seats
+- **Show current availability of seats**
    - if you want to see the current status of the deli, type **4**.
-- End program
+   
+
+- **End program**
    - if you want to end the program, type **5**.
+
 
 # Output specifications
 	
