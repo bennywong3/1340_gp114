@@ -53,6 +53,14 @@ Preferable dining time for each customer: 1 hour, maximum 2 hours
 
 Size of dining area: 2000 sq. ft. with maximum 3 rows X 5 columns (in rectangular shape)
 
+Each table is named according to its coordinate, i.e. the table at upper left corner is named R0C0.
+
+**Assumption**
+It is assumed that customers from the same group leave at the same time.
+
+For example, if a group of 6 customers entered the deli and occupied a 8-seat table R0C0, 
+It is assumed that when using the "Release a table" function, if there is two groups of customers sharing the same table, they leave at different time and users have to manually use this function twice. 
+
 # Functionalities and features	
 
 **1. Navigation menu**
@@ -103,7 +111,7 @@ If inputs are 3 groups with number of customers 5, 4, 2 respectively, the output
 
 **4. Release a table**
 
-To tackle problem 2 (management of seats) that we fail to know which table is released, 
+To tackle problem 2 (management of seats) that we fail to know which table is released, this program allows us to manually release table. 
 
 **5. Check tables occupied for too long**
 
