@@ -160,6 +160,10 @@ Refer to assumptions 3, 4, 5 for manual release.
 
 # Input/ouput specifications
 
+**Input Specifications**
+
+1. Choose the desired layout
+
 ```
 Choose your layout:
 -----------------------------------------------------
@@ -172,7 +176,6 @@ Choose your layout:
 -----------------------------------------------------
 Please select (1 to 6):
 ```
-1. Choose the desired layout
 
 - Preset Layouts
 
@@ -186,6 +189,76 @@ Please select (1 to 6):
 0 4 0 4 0
 2 0 2 0 2
 ```
+
+2. Table Management
+
+```
+--------------------
+Current layout: 
+8-8 8-8 8-8 8-8 8-8 
+4-4 4-4 4-4 4-4 4-4 
+2-2 2-2 2-2 2-2 2-2 
+--------------------
+Input the corresponding number
+---------------------------------------
+1: Occupy a table
+2: Release a table
+3. Check tables occupied for too long
+4. Show current availability of seats
+5. End program
+---------------------------------------
+Your input: 
+```
+- Occupy a table
+   - if you want to occupy a table when customers come in, type **1**. The serial output will be as follows:
+```
+Number of customers (1-8): 
+```
+ >type the numbers of customers(from 1-8, cannot exceed 8)
+- Release a table
+   - if you want to release a table manually, type **2**. The serial output will be as follows:
+```
+Please input the row and column of the table and the number of customers left
+Row number: 
+Column number: 
+Number of customers left: 
+```
+ >first input the row number, and then the column number, finally the number of customers that you wanted them to leave.
+- Check tables occupied for too long
+   - if you want to check whether there are customers occupied the seats for too long, type **3**; case 1 will happen if no customers occupied the seats for too long, otherwise case 2 will happen.
+   
+*case 1:*
+```
+There is no costumer occupied a table for too long.
+```
+*case 2:*
+```
+Would you like those customers to leave?
+Your choice(Y/N): 
+```
+ >if you want to remove the customers that occupied the seats for too long and release the table automatically, type **Y**, otherwise **N**.
+ 
+- Show current availability of seats
+   - if you want to see the current status of the deli, type**4**.
+- End program
+   - if you want to end the program, type **5**.
+
+**Output Specifications**
+	
+A text file named “*output.txt*” will be generated, here is an example:
+```
+#output.txt
+Accumulated total number of customers:
+150
+Total number of customers for today:
+0
+Program ended at:
+Sat Apr 27 17:44:14 2019
+
+Full record of today's customers (in descending order)
+```
+
+The number of accumulated customers, the total number of customers today, the program ended time and a full record of today’s customers will be showed(number of customers and the respective table number)
 
 
 # Compilation and execution instructions
