@@ -189,6 +189,58 @@ Current layout:
 ```
 **7. Change the layout of deli**
 
+To tackle problem 4, we have 5 preset layout options and 1 custom setting option for the user, including default setting, spring setting, summer setting, autumn setting and winter setting.
+
+- Default setting(1)
+```
+8-8 8-8 8-8 8-8 8-8 
+4-4 4-4 4-4 4-4 4-4 
+2-2 2-2 2-2 2-2 2-2 
+```
+- Spring setting(2)
+```
+8-8 8-8 8-8 8-8 8-8 
+X-X X-X X-X X-X X-X 
+4-4 4-4 4-4 4-4 4-4
+```
+- Summer setting(3)
+```
+8-8 4-4 X-X 4-4 8-8 
+X-X 2-2 2-2 2-2 X-X 
+8-8 4-4 X-X 4-4 8-8 
+```
+- Autumn setting(4)
+```
+8-8 X-X 8-8 X-X 8-8 
+4-4 X-X 4-4 X-X 4-4 
+2-2 X-X 2-2 X-X 2-2 
+```
+- Winter setting(5)
+```
+X-X X-X X-X X-X X-X 
+4-4 8-8 8-8 8-8 4-4 
+X-X X-X X-X X-X X-X
+```
+- Custom setting(6)
+
+For custom setting, input your desired layout (with 3 rows x 5 columns, input 0 if there is no table and space between integers is required.)
+
+The occurrence of integers 8, 4 and 2 should not exceed 5 respectively. 
+
+For example, input:
+```
+8 0 8 0 8
+0 4 0 4 0
+2 0 2 0 2
+```
+The custom setting will be:
+```
+8-8 X-X 8-8 X-X 8-8 
+X-X 4-4 X-X 4-4 X-X 
+2-2 X-X 2-2 X-X 2-2 
+```
+
+
 **8. Table sharing**
 
 To tackle problem 5, we implement an additional function which will arrange and split customers in order to have maximum table usage.
