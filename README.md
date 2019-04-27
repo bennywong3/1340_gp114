@@ -73,9 +73,25 @@ Column number: 0
 Number of customers left: 6
 ```
 
+4. It is assumed that customers from different groups sharing the same table, the two groups leave separately.
 
-For example, if a group of 6 customers entered the deli and occupied a 8-seat table R0C0, 
-It is assumed that when using the "Release a table" function, if there is two groups of customers sharing the same table, they leave at different time and users have to manually use this function twice. 
+   - if a group of 5 customers and another group of 3 customers occupied a 8-seat table R0C0, when users want to manually release table R0C0, users have to use the "Release a table" function twice.
+```
+Please input the row and column of the table and the number of customers left
+Row number: 0
+Column number: 0
+Number of customers left: 5
+```
+```
+Please input the row and column of the table and the number of customers left
+Row number: 0
+Column number: 0
+Number of customers left: 3
+```
+5. When there is not enough seats and customers separate into multiple groups to share tables with others,  they no longer consider as a group and they can leave seperately.
+
+   - if a group of 8 customers came in and separated into 4, 2, 2, the program considered it as 3 groups of customers. 
+
 
 # Functionalities and features	
 
@@ -98,9 +114,9 @@ Your input:
 
 **2. Check current availability of seats**
 
-To tackle problem of 1 (availability of tables), when this program print the layout of the deli, it also prints the current availiable seats of all tables next to the table size. The output of one table will be <table size - curr. ava.seat>.
+To tackle problem of 1 (availability of tables), when this program print the layout of the deli, it also prints the current available seats of all tables next to the table size. The output of one table will be <table size - curr. ava.seat>.
 
-For example, when there is 6 customers occupying a 8-seat table, that means 2 seats are availiable for this table. 
+For example, when there is 6 customers occupying a 8-seat table, that means 2 seats are available for this table. 
 So, the output of that table will be 8-2.
 
 The program will print the current layout as follows:
