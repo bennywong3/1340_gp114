@@ -163,7 +163,7 @@ To tackle problem 3 (no trackable record of customer’s dining time), the subpr
 
 When this subprogram is called, it will check if there is any group of customers that occupied a table for more than 20 seconds in real life. If so, it will print out all the groups and ask whether the user want them to leave. If there is no group occupying too long, "There is no costumer occupied a table for too long." will be printed.
 
-Example output when 3 groups of customers occupied tables for too long.
+Example output when 3 groups of customers occupied tables for too long. (default layout)
 
 ```
 2 customers occupied table R2C0 for too long.
@@ -175,6 +175,18 @@ Your choice(Y/N):
 
 **6. Release a table automatically**
 
+If there are customers occupied for too long like the example above, and the user enter character **Y**, the program will automatically let those groups leave.
+
+The next output for previous example is as follows:
+```
+Your choice(Y/N): Y
+--------------------
+Current layout:
+8-8 8-8 8-8 8-8 8-8
+4-4 4-4 4-4 4-4 4-4
+2-2 2-2 2-2 2-2 2-2
+--------------------
+```
 **7. Change the layout of deli**
 
 **8. Table sharing**
