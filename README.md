@@ -189,39 +189,39 @@ Current layout:
 ```
 **7. Change the layout of deli**
 
-To tackle problem 4, we have 5 preset layout options and 1 custom setting option for the user, including default setting, spring setting, summer setting, autumn setting and winter setting.
+To tackle problem 4 (layout of deli), we have 5 preset layout options and 1 custom setting option for the user, including default setting, spring setting, summer setting, autumn setting and winter setting.
 
-- Default setting(1)
+- Default setting (1)
 ```
 8-8 8-8 8-8 8-8 8-8 
 4-4 4-4 4-4 4-4 4-4 
 2-2 2-2 2-2 2-2 2-2 
 ```
-- Spring setting(2)
+- Spring setting (2)
 ```
 8-8 8-8 8-8 8-8 8-8 
 X-X X-X X-X X-X X-X 
 4-4 4-4 4-4 4-4 4-4
 ```
-- Summer setting(3)
+- Summer setting (3)
 ```
 8-8 4-4 X-X 4-4 8-8 
 X-X 2-2 2-2 2-2 X-X 
 8-8 4-4 X-X 4-4 8-8 
 ```
-- Autumn setting(4)
+- Autumn setting (4)
 ```
 8-8 X-X 8-8 X-X 8-8 
 4-4 X-X 4-4 X-X 4-4 
 2-2 X-X 2-2 X-X 2-2 
 ```
-- Winter setting(5)
+- Winter setting (5)
 ```
 X-X X-X X-X X-X X-X 
 4-4 8-8 8-8 8-8 4-4 
 X-X X-X X-X X-X X-X
 ```
-- Custom setting(6)
+- Custom setting (6)
 
 For custom setting, input your desired layout (with 3 rows x 5 columns, input 0 if there is no table and space between integers is required.)
 
@@ -243,7 +243,7 @@ X-X 4-4 X-X 4-4 X-X
 
 **8. Table sharing**
 
-To tackle problem 5, we implement an additional function which will arrange and split customers in order to have maximum table usage.
+To tackle problem 5 (limited table size), we implement an additional function which will arrange and split customers in order to have maximum table usage.
 	
 For example, in the default setting, if 4 groups of 6 people are in the deli, i.e.
 ```
@@ -271,9 +271,11 @@ So that the table usage is maximized.
 
 In order to keep records of deli’s operation, we implemented an additional function to store and export the record to a text file. 
 
-The function will first achieve yesterday’s number of customers and add up today’s number of customers. 
+The function will first open the file "input.txt" with yesterday’s record to get the accumulated number of customers.
 
-Then export the total number of customers, the program ended time and a full record of today’s customers(number of customers and the respective table number).
+Next, it will create a file "output.txt" and add up today’s number of customers to accumulated number of customers.
+
+Then, it will export the total number of customers, the program ended time and a full record of today’s customers(number of customers and the respective table number).
 
 Here is an example of the output file:
 
@@ -376,7 +378,7 @@ Your choice(Y/N):
  >if you want to remove the customers that occupied the seats for too long and release the table automatically, type **Y**, otherwise **N**.
  
 - Show current availability of seats
-   - if you want to see the current status of the deli, type**4**.
+   - if you want to see the current status of the deli, type **4**.
 - End program
    - if you want to end the program, type **5**.
 
