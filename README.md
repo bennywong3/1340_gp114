@@ -56,7 +56,23 @@ Size of dining area: 2000 sq. ft. with maximum 3 rows X 5 columns (in rectangula
 Each table is named according to its coordinate, i.e. the table at upper left corner is named R0C0.
 
 **Assumption**
-It is assumed that customers from the same group leave at the same time.
+
+1. Our deli cannot handle a group of customers with more than 8 people.
+
+2. Our deli only has 2-seat tables, 4-seat tables and 8-seat tables. The maximum number for each is 5.
+
+3. It is assumed that customers from the same group leave at the same time.
+
+   - if a group of 6 customers entered the deli and occupied a 8-seat table R0C0, all of them leave the table at the same time.
+   - **Number of customers left must equal to the size of group.** (in this case, 6)
+
+```
+Please input the row and column of the table and the number of customers left
+Row number: 0
+Column number: 0
+Number of customers left: 6
+```
+
 
 For example, if a group of 6 customers entered the deli and occupied a 8-seat table R0C0, 
 It is assumed that when using the "Release a table" function, if there is two groups of customers sharing the same table, they leave at different time and users have to manually use this function twice. 
@@ -74,7 +90,7 @@ Input the corresponding number
 1: Occupy a table
 2: Release a table
 3. Check tables occupied for too long
-4. Show current availibility of seats
+4. Show current availability of seats
 5. End program
 ---------------------------------------
 Your input:
@@ -132,10 +148,12 @@ Please select (1 to 6):
 1. Choose the desired layout
 
 - Preset Layouts
- -If you want to choose layout 1, type **1**
+
+  - If you want to choose layout 1, type **1**
 
 - Custom Layout
- -If you want to use custom setting, type **6** and then input your desired layout(with 3 rows x 5 columns, input 0 if there is no table and space between integers), e.g.
+
+  - If you want to use custom setting, type **6** and then input your desired layout(with 3 rows x 5 columns, input 0 if there is no table and space between integers), e.g.
 ```
 8 0 8 0 8
 0 4 0 4 0
