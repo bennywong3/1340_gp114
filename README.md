@@ -41,7 +41,7 @@ Dining area layout (default setting):
 
 Maximum table size: 8
 
-Size of tables available: 2,4,8
+Size of tables available: 2, 4, 8
 
 Total number of seats available: 70
 
