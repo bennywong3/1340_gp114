@@ -116,7 +116,7 @@ To tackle problem 2 (management of seats) that we fail to know which table is re
 **2. Manual compilation and execution**
 
 I. Use these command lines to compile all files separately:
-
+ ```
  g++ -c time_list.cpp
  
  g++ -c layout.cpp
@@ -132,6 +132,7 @@ I. Use these command lines to compile all files separately:
  g++ -c main.cpp
 
  g++ main.o time_list.o layout.o print_layout.o occupy.o release.o file_in_out.o -o main
+ ```
  
 II. If the compilation is successful, you should find another file “main” in the working directory.
 
