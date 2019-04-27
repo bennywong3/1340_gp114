@@ -113,6 +113,15 @@ To tackle problem 2 (management of seats) that we fail to know which table is re
 
 **1. Makefile execution**
 
+I. Use this command line to compile all files:
+ ```
+ make main
+ ```
+<img src="image/make_compile.png">
+II. Run the executable “main” by typing “./main” at the prompt
+
+<img src="image/execution.png">
+
 **2. Manual compilation and execution**
 
 I. Use these command lines to compile all files separately:
