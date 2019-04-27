@@ -269,9 +269,27 @@ So that the table usage is maximized.
 
 **9. File input and ouput to save record**
 
+In order to keep records of deli’s operation, we implemented an additional function to store and export the record to a text file. 
 
+The function will first achieve yesterday’s number of customers and add up today’s number of customers. 
 
+Then export the total number of customers, the program ended time and a full record of today’s customers(number of customers and the respective table number).
 
+Here is an example of the output file:
+
+```
+#output.txt
+Accumulated total number of customers:
+158
+Total number of customers for today:
+8
+Program ended at:
+Sat Apr 27 19:19:08 2019
+
+Full record of today's customers (in descending order)
+8 customers came in and occupied table R0C0
+
+```
 
 # Input/ouput specifications
 
