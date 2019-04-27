@@ -191,6 +191,30 @@ Current layout:
 
 **8. Table sharing**
 
+To tackle problem 5, we implement an additional function which will arrange and split customers in order to have maximum table usage.
+	
+For example, in the default setting, if 4 groups of 6 people are in the deli, i.e.
+```
+8-2 8-2 8-2 8-2 8-2 
+4-4 4-4 4-4 4-4 4-4 
+2-2 2-2 2-2 2-2 2-2
+```
+another group of 6 people will not be able to occupy an 8-man table. Our system will then split them into multiple groups which most of them can sit together. 
+Just like below:
+```
+8-2 8-2 8-2 8-2 8-2 
+4-0 4-2 4-4 4-4 4-4 
+2-2 2-2 2-2 2-2 2-2 
+``` 
+if we input one more group of 6 people in, the result will be like this:
+```
+8-2 8-0 8-2 8-2 8-2 
+4-0 4-2 4-0 4-2 4-4
+2-2 2-2 2-2 2-2 2-2 
+```
+So that the table usage is maximized.
+
+
 **9. File input and ouput to save record**
 
 
