@@ -1,0 +1,22 @@
+Accumulated total number of customers:
+150
+Total number of customers for today:
+50
+Program ended at:
+Fri Apr 26 23:00:00 2019
+ 
+Full record of today's customers (in descending order)
+8 customers came in and occupied table R0C0
+2 customers came in and occupied table R2C4
+2 customers came in and occupied table R2C2
+2 customers came in and occupied table R1C4
+2 customers came in and occupied table R0C4
+2 customers came in and occupied table R0C2
+2 customers came in and occupied table R1C4
+4 customers came in and occupied table R1C2
+6 customers came in and occupied table R0C4
+6 customers came in and occupied table R0C2
+2 customers came in and occupied table R2C0
+4 customers came in and occupied table R1C0
+8 customers came in and occupied table R0C0
+
