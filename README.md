@@ -323,11 +323,18 @@ Please select (1 to 6):
 
   - If you want to use custom setting, type **6** and then input your desired layout(with 3 rows x 5 columns, input 0 if there is no table and space between integers is required.
   - The occurance of integers 8, 4 and 2 should not exceed 5 respectively. Do not input integer except 0, 2, 4, 8.
-  - An example:
+An example input:
 ```
 8 0 8 0 8
 0 4 0 4 0
 2 0 2 0 2
+```
+
+The output will be:
+```
+8-8 X-X 8-8 X-X 8-8
+X-X 4-4 X-X 4-4 X-X
+2-2 X-X 2-2 X-X 2-2
 ```
 
 ### 2. Table Management
