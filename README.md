@@ -96,7 +96,7 @@ Number of customers left: 3
 
 # Functionalities and features	
 
-**1. Navigation menu**
+### **1. Navigation menu**
 
 In order to access different functions of this program, it provides a navigation menu for users to choose the corresponding function. The program will constantly print this menu after a action has done.
 
@@ -113,7 +113,7 @@ Input the corresponding number
 Your input:
 ```
 
-**2. Check current availability of seats**
+### **2. Check current availability of seats**
 
 To tackle problem of 1 (availability of tables), when this program print the layout of the deli, it also prints the current available seats of all tables next to the table size. The output of one table will be <table size - curr. ava.seat>.
 
@@ -129,7 +129,7 @@ Current layout:
 ```
 The above layout indicates that there is only 6 customers inside the deli, and they are occupying the 8-seat table in the upper left corner.
 
-**3. Occupy a vacant table**
+### **3. Occupy a vacant table**
 
 To tackle problem 2 (management of seats) that occuppying a table is insufficient, when we input the number of customers, this program will automactically suggest a vacant table with minimal enough seats for this group of customers. When the number of customers is 5 to 8, this program will assign the 5 customers to occupy a vacant 8-seat table. If the number is 3 to 4, a vacant 4-seat table will be assigned. If the number is 1 to 2, 2-seat table will be used.
 
@@ -142,7 +142,7 @@ If inputs are 3 groups with number of customers 5, 4, 2 respectively, the output
 2-0 2-2 2-2 2-2 2-2
 ```
 
-**4. Release a table manually**
+### **4. Release a table manually**
 
 To tackle problem 2 (management of seats) that we fail to know which table is released, this program allows us to manually release tables. Users have to enter and row and column number of table, and the number of customers that left.
 
@@ -157,7 +157,7 @@ Number of customers left: 3
 
 Refer to assumptions 3, 4, 5 for manual release.
 
-**5. Check tables occupied for too long**
+### **5. Check tables occupied for too long**
 
 To tackle problem 3 (no trackable record of customer’s dining time), the subprogram "Check tables occupied for too long" allows users to check whether there are tables occupied for too long whenever they want.
 
@@ -173,7 +173,7 @@ Would you like those customers to leave?
 Your choice(Y/N):
 ```
 
-**6. Release a table automatically**
+### **6. Release a table automatically**
 
 If there are customers occupied for too long like the example above, and the user enter character **Y**, the program will automatically let those groups leave.
 
@@ -187,7 +187,7 @@ Current layout:
 2-2 2-2 2-2 2-2 2-2
 --------------------
 ```
-**7. Change the layout of deli**
+### **7. Change the layout of deli**
 
 To tackle problem 4 (layout of deli), we have 5 preset layout options and 1 custom setting option for the user, including default setting, spring setting, summer setting, autumn setting and winter setting.
 
@@ -241,7 +241,7 @@ X-X 4-4 X-X 4-4 X-X
 ```
 
 
-**8. Table sharing**
+### **8. Table sharing**
 
 To tackle problem 5 (limited table size), we implement an additional function which will arrange and split customers in order to have maximum table usage.
 	
@@ -267,7 +267,7 @@ if we input one more group of 6 people in, the result will be like this:
 So that the table usage is maximized.
 
 
-**9. File input and ouput to save record**
+### **9. File input and ouput to save record**
 
 In order to keep records of deli’s operation, we implemented an additional function to store and export the record to a text file. 
 
@@ -293,11 +293,10 @@ Full record of today's customers (in descending order)
 
 ```
 
-# Input/ouput specifications
+# Input specifications
 
-**Input Specifications**
 
-1. Choose the desired layout
+### 1. Choose the desired layout
 
 ```
 Choose your layout:
@@ -327,7 +326,7 @@ Please select (1 to 6):
 2 0 2 0 2
 ```
 
-2. Table Management
+### 2. Table Management
 
 ```
 --------------------
@@ -382,7 +381,7 @@ Your choice(Y/N):
 - End program
    - if you want to end the program, type **5**.
 
-**Output Specifications**
+# Output specifications
 	
 A text file named “*output.txt*” will be generated, here is an example:
 ```
