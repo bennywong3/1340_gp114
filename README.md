@@ -29,6 +29,10 @@ Contributors:
 
 > During peak hours, we have to rearrange customers’ seat in order to maximize table usage. For example, when a group of 3 is waiting, we have to arrange them to share an 8-seat table with another 5 customers.  
 
+**6. No trackable record**
+
+> We have no records of deli’s operation. We do not know how many customers have come to our deli in one day and we cannot make comparison between previous records and new records. Also, we do not know our target customers, like whether large groups or couples prefer our deli more.
+
 # Problem settings
 
 Dining area layout (default setting):
@@ -269,7 +273,7 @@ So that the table usage is maximized.
 
 ### **9. File input and ouput to save record**
 
-In order to keep records of deli’s operation, we implemented an additional function to store and export the record to a text file. 
+To focus on problem 9 (no trackable record), in order to keep records of deli’s operation, we implemented an additional function to store and export the record to a text file. 
 
 The function will first open the file "input.txt" with yesterday’s record to get the accumulated number of customers.
 
