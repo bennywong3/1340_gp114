@@ -169,7 +169,7 @@ To tackle problem 3 (no trackable record of customer’s dining time), the subpr
 
 When this subprogram is called, it will check if there is any group of customers that occupied a table for more than 20 seconds in real life. If so, it will print out all the groups and ask whether the user wants them to leave. If there is no group occupying too long, "There is no costumer occupied a table for too long." will be printed.
 
-Example output when 3 groups of customers occupied tables for too long. (default layout)
+Output example when 3 groups of customers occupied tables for too long. (default layout)
 
 ```
 2 customers occupied table R2C0 for too long.
@@ -327,7 +327,7 @@ Please select (1 to 6):
   - If you want to use the custom setting, type **6** and then input your desired layout (with 3 rows x 5 columns, input 0 if there is no table and space between integers is required.)
   - The occurrence of integers 8, 4 and 2 should not exceed 5 respectively. Do not input integer except 0, 2, 4, 8.
   
-An example input:
+An input example:
 ```
 8 0 8 0 8
 0 4 0 4 0
@@ -369,7 +369,7 @@ Number of customers (1-8):
  
  
 - **Release a table**
-   - iIf you want to release a table manually, input **2**. The serial output will be as follows:
+   - If you want to release a table manually, input **2**. The serial output will be as follows:
 ```
 Please input the row and column of the table and the number of customers left
 Row number: 
@@ -402,7 +402,7 @@ Your choice(Y/N):
 - **Show current availability of seats**
    - if you want to see the current status of the deli, input **4**.
 
-A sample output after inputting **4**:   
+Sample output after inputting **4**:   
 ```
 --------------------
 Current layout: 
@@ -416,7 +416,7 @@ Current layout:
    - if you want to end the program, input **5**.
      It will output the total number of customers for today and then end the program. 
 
-A sample output after inputting **5**:   
+Sample output after inputting **5**:   
 ```   
 Today a total of 0 customers visited our deli.
 See output.txt for more details.
