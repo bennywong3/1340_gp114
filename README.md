@@ -117,7 +117,7 @@ I. Use this command line to compile all files:
  ```
  make main
  ```
-<img src="image/make_compile.png">
+<img src="image/makefile_compile.png">
 II. Run the executable “main” by typing “./main” at the prompt
 
 <img src="image/execution.png">
