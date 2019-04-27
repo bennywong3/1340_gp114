@@ -117,6 +117,31 @@ To tackle problem 2 (management of seats) that we fail to know which table is re
 
 # Input/ouput specifications
 
+```
+Choose your layout:
+-----------------------------------------------------
+1: Default setting (maximum number of tables)
+2: Spring setting  (deleted one row)
+3: Summer setting  (large tables are at the corner)
+4: Autumn setting  (deleted two columns for space)
+5: Winter setting  (less tables)
+6: Custom setting  (input your own layout)
+-----------------------------------------------------
+Please select (1 to 6):
+```
+1. Choose the desired layout
+
+- Preset Layouts
+   -If you want to choose layout 1, type **1**
+
+- Custom Layout
+  -If you want to use custom setting, type **6** and then input your desired layout(with 3 rows x 5 columns, input 0 if there is no table and space between integers), e.g.
+```
+8 0 8 0 8
+0 4 0 4 0
+```
+
+
 # Compilation and execution instructions
 
 **1. Makefile execution**
