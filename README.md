@@ -130,3 +130,11 @@ I. Use these command lines to compile all files separately:
  g++ -c file_in_out.cpp
  
  g++ -c main.cpp
+
+ g++ main.o time_list.o layout.o print_layout.o occupy.o release.o file_in_out.o -o main
+ 
+II. If the compilation is successful, you should find another file “main” in the working directory.
+
+III.Run the executable “main” by typing “./main” at the prompt
+
+ 
