@@ -128,7 +128,7 @@ Current layout:
 ```
 The above layout indicates that there is only 6 customers inside the deli, and they are occupying the 8-seat table in the upper left corner.
 
-**3. Occupy a table**
+**3. Occupy a vacant table**
 
 To tackle problem 2 (management of seats) that occuppying a table is insufficient, when we input the number of customers, this program will automactically suggest a vacant table with minimal enough seats for this group of customers. When the number of customers is 5 to 8, this program will assign the 5 customers to occupy a vacant 8-seat table. If the number is 3 to 4, a vacant 4-seat table will be assigned. If the number is 1 to 2, 2-seat table will be used.
 
@@ -157,6 +157,19 @@ Number of customers left: 3
 Refer to assumptions 3, 4, 5 for manual release.
 
 **5. Check tables occupied for too long**
+
+
+**6. Release a table automatically**
+
+**7. Change the layout of deli**
+
+**8. Table sharing**
+
+**9. File input and ouput to save record**
+
+
+
+
 
 # Input/ouput specifications
 
