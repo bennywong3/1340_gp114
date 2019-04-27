@@ -55,7 +55,7 @@ Size of dining area: 2000 sq. ft. with maximum 3 rows X 5 columns (in rectangula
 
 Each table is named according to its coordinate, i.e. the table at upper left corner is named R0C0.
 
-**Assumption**
+### **Assumption**
 
 1. Our deli cannot handle a group of customers with more than 8 people.
 
@@ -350,7 +350,7 @@ Your input:
 ```
 Number of customers (1-8): 
 ```
- >type the numbers of customers(from 1-8, cannot exceed 8)
+ >type the numbers of customers (from 1-8, cannot exceed 8)
  
  
 - **Release a table**
@@ -408,7 +408,7 @@ The number of accumulated customers, the total number of customers today, the pr
 
 # Compilation and execution instructions
 
-**1. Makefile execution**
+### **1. Makefile execution**
 
 I. Use this command line to compile all files:
  ```
@@ -419,7 +419,7 @@ II. Run the executable “main” by typing “./main” at the prompt
 
 <img src="image/execution.png">
 
-**2. Manual compilation and execution**
+### **2. Manual compilation and execution**
 
 I. Use these command lines to compile all files separately:
  ```
